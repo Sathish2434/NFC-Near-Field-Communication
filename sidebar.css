@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    border-color: transparent;
+    padding: 0.375rem;
+    font-family: poppins, sans-serif;
+    position: relative;
+}
+
+button,
+a{
+    all: unset;
+    font: inherit;
+    cursor: pointer;
+
+}
+
+nav{
+    position: fixed;
+    width: 5rem;
+    height: calc(100vh - 0.75rem);
+    background-color: transparent;
+    padding: 1rem 0.75rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    transition: width 500ms ease;
+}
+
+body.active nav{
+    width: 15rem;
+}
+
+.sidebar-header,
+.sidebar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.sidebar-header{
+    margin-bottom: 1.5rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.logo-wrapper > img {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: transparent;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar-links{
+    flex-direction: column;
+    margin-bottom: auto;
+    gap: 0.6rem;
+    padding-top: 1.5rem;
+}
+
+nav > .sidebar-links {
+    border-top: 1px solid transparent;
+}
+
+body.active .sidebar-links,
+body.active .sidebar-header,
+body.active .user-profile {
+    justify-content: start;
+    align-items: stretch;
+}
+
+.link {
+    display: flex;
+    padding: 0,6rem;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+}
+
+.hidden {
+    display: none;
+
+}
+
+body.active .hidden {
+    display: inline;
+}
+
+.link:hover,
+.link.active:hover {
+    background-color: transparent;
+}
+
+.link.active {
+    background-color: transparent;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid transparent;
+
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-avatar:hover {
+    scale: 1.1;
+}
+
+.user-details {
+    align-self: center;
+    overflow: hidden;
+}
+
+.user-details .username {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.user-details .user-email {
+    font-size: 0.8rem;
+}
+
+.link > img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-bottom .sidebar-links {
+    padding-bottom: 1.5rem;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease;
+
+}
+
+body.active .toggle-btn {
+    transform: rotate(180deg);
+    background-color: transparent;
+}

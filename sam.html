@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFC Tag Data Submission</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<h2>NFC Tag Data Submission</h2>
+
+<form id="dataForm">
+  <label for="registrationNumber">Registration Number:</label>
+  <input type="number" id="registrationNumber" name="registrationNumber"><br><br>
+  
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date"><br><br>
+  
+  <button type="button" onclick="submitData()">Submit Data</button>
+</form>
+
+<br>
+
+<table id="dataTable">
+  <thead>
+    <tr>
+      <th>Registration Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table rows will be added dynamically -->
+  </tbody>
+</table>
+
+<script>
+  function submitData() {
+    var registrationNumber = document.getElementById("registrationNumber").value;
+    var date = document.getElementById("date").value;
+    
+    if (registrationNumber && date) {
+      var table = document.getElementById("dataTable").getElementsByTagName('tbody')[0];
+      var newRow = table.insertRow(table.rows.length);
+      var cell1 = newRow.insertCell(0);
+      var cell2 = newRow.insertCell(1);
+      cell1.innerHTML = registrationNumber;
+      cell2.innerHTML = date;
+      
+      // Clear the input fields after submission
+      document.getElementById("dataForm").reset();
+    } else {
+      alert("Please enter registration number and date before submitting.");
+    }
+  }
+</script>
+
+</body>
+</html>

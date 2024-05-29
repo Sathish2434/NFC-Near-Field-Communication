@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #254260;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #181ec9;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .font {
+            display: flex;
+            padding: 20px;
+            font-size: 22px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .font a {
+            color: black;
+            padding-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="restyle1.css">
+</head>
+<body>
+    <nav>
+        <div class="sidebar-header">
+            <a class="logo-wrapper">
+                <img src="logo1.png" width="50px" alt="Logo">
+                <h3 class="hidden" style="font-size: 25px; color: white; font-family: arial;">WELLCOME</h3>
+            </a>
+            <button class="toggle-btn" style="font-size: large;">
+                <i class="fa-solid fa-bars" width="10px"></i>
+                
+            </button>
+        </div>
+
+        <div class="sidebar-links">
+            <a href="index.php" class="link active">
+                <i class="fa-solid fa-house"></i>
+                <span class="hidden">Home</span>
+            </a>
+            <a href="About.html" class="link active">
+                <i class="fa-solid fa-info"></i>
+                <span class="hidden">About</span>
+            </a>
+            <a href="Contact.html" class="link active">
+                <i class="fa-solid fa-phone"></i>
+                <span class="hidden">Contact</span>
+            </a>
+			<a href="sam.html" class="link active">
+				<i class="fa-solid fa-file"></i>
+                <span class="hidden">Records</span>
+            </a>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-links">
+                <a class="link" href="new account.php">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="hidden">New Account</span>
+                </a>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+
+                <div class="user-details hidden">
+                    <p class="username">SATHISH S</p>
+                    <p class="user-email">sathishs.it2022@dscet.ac.in</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="sidebar.js"></script>
+    
+    <header>
+        <h1>About Our Hospital</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>"Your health, our priority"</p>
+        </section>
+        <section>
+            <h2>Our Project Team</h2>
+            <ul type="none">
+                <li>Dr.S. Sathish - CEO</li>
+                <li>Dr.M. Hemnath - Head of Surgery Department</li>
+                <li>Dr.C. Darunkishore - Head of Pediatrics Department</li>
+            </ul>
+        </section>
+    </main>
+    <div class="font">
+        <a href="https://www.instagram.com/darunkishore.chandru?igsh=MTc4anc0dHlrY2docw==" class="insta">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://x.com/SATHISH00731?t=vbcZOqyVX3dtuUmDNbACaA&s=08" class="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100084112681933&mibextid=ZbWKwL" class="facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://wa.me/qr/FKB2XR2FJ4TRE1" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Digital Hospital</p>
+    </footer>
+</body>
+</html>

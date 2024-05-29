@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("signinback.jpg");
+    backdrop-filter: brightness(95%);
+    background-size:contain;
+
+}
+    
+  
+  h2 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    border-width: 3px;
+    border-radius: 8px;
+    
+  }
+  
+  label {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+   
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-width: 2px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #000000;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #52e652;
+  }
+  
+  input:invalid {
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+  }
+  
+  input:valid {
+    border-color: #ffffff;
+    border-width: 2px;
+  }
+  
+  .error-message {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+
+  .logout{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+
+  }
+
+  .logout:hover {
+    background-color: rgb(219, 70, 70);
+  }
+  
